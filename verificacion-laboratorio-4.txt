@@ -1,0 +1,81 @@
+{
+  base: 'videojuegos',
+  colecciones: [
+    'desarrolladoras',
+    'generos',
+    'juegos',
+    'plataformas',
+    'ventas'
+  ],
+  conteos: {
+    desarrolladoras: NumberInt('6'),
+    generos: NumberInt('5'),
+    juegos: NumberInt('4'),
+    plataformas: NumberInt('2'),
+    ventas: NumberInt('0')
+  },
+  juegos: [
+    {
+      _id: 'PC-001',
+      titulo: 'The Witcher 3: Wild Hunt',
+      copias: NumberInt('2'),
+      disponible: true
+    },
+    {
+      _id: 'PS-001',
+      titulo: 'Elden Ring',
+      copias: NumberInt('5'),
+      disponible: true
+    },
+    {
+      _id: 'PS-002',
+      titulo: 'Far Cry 6',
+      copias: NumberInt('0'),
+      disponible: false
+    },
+    {
+      _id: 'SW-001',
+      titulo: 'The Legend of Zelda: Breath of the Wild',
+      copias: NumberInt('4'),
+      disponible: true
+    }
+  ],
+  generosInactivos: [
+    {
+      _id: NumberInt('5'),
+      nombre: 'Arcade',
+      estado: false
+    }
+  ],
+  tipos: [
+    {
+      _id: 'PC-001',
+      lanzamiento: 'date',
+      desarrolladora: 'object',
+      plataformas: 'array',
+      generos: 'array'
+    },
+    {
+      _id: 'PS-001',
+      lanzamiento: 'date',
+      desarrolladora: 'object',
+      plataformas: 'array',
+      generos: 'array'
+    },
+    {
+      _id: 'PS-002',
+      lanzamiento: 'date',
+      desarrolladora: 'object',
+      plataformas: 'array',
+      generos: 'array'
+    },
+    {
+      _id: 'SW-001',
+      lanzamiento: 'date',
+      desarrolladora: 'object',
+      plataformas: 'array',
+      generos: 'array'
+    }
+  ],
+  correcto: true
+}
